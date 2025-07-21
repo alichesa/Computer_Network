@@ -12,7 +12,6 @@
 - HTTP、DNS、协议栈、TCP、IP、MAC（对方的MAC地址由ARP广播获得）、网卡（会有头和尾校验）、路由器；由于本地有多个网卡，因此确定所需本地网址的时候会在路由表中的路由进行与计算从而找出所需的网址。传送的IP地址始终不变，变得一直都是MAC地址
 ![Pasted image 20250529105127](https://github.com/user-attachments/assets/d90b8b87-81a7-494a-8cca-dd9e476c3155)
 
-
 - 首先浏览器解析域名，解析成为ip地址然后与服务器通过三次握手协议建立连接，建立TCP连接后进行HTTP请求，服务器返回HTTP代码，然后浏览器对代码进行解析渲染，完成之后就需要进行释放，也就是四次挥手
 
 - 三次握手的原因主要为了网络延迟从而导致的某方长时间等待建立的ABA
@@ -40,8 +39,6 @@
   公钥加密私钥解密是为了内容不被泄露，私钥加密公钥解密是为了内容不被冒充
 <img width="921" height="1082" alt="image" src="https://github.com/user-attachments/assets/68c32671-2057-4950-b704-97aa4f4cc52e" />
 <img width="1002" height="500" alt="image" src="https://github.com/user-attachments/assets/133d3caf-1308-419b-83a2-892e8cc3bff8" />
-
-
 
 - cookie的出现主要是http是无状态的协议，cookie将服务器返回的数据存在本地，然后下次发送请求的时候一并发送过去用以身份确认，cookie是在用户端，session是在服务器端，服务器端创建好后会返回给客户端sessionid，然后下次传输就会附带
 
@@ -71,3 +68,5 @@
 - 在Linux中若传输准备工作全部完成就会将数据放入Ring Buffer进行等待，此时出发软中断，网卡开始DMA传输数据，若发送全部结束之后就会触发硬中断并释放内存
 
 - TLS是一种加密通信协议，用的RSA非对称加密
+
+- HTTP是计算密集型，而不是IO密集型，这代表了优化的空间主要在算力
