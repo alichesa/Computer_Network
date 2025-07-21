@@ -39,6 +39,8 @@
   在SSL/TLS协议中，非对称加密用于身份验证和密钥交换，而对称加密用于实际数据的加密传输。这种结合利用了非对称加密的安全性和对称加密的效率
   公钥加密私钥解密是为了内容不被泄露，私钥加密公钥解密是为了内容不被冒充
 <img width="921" height="1082" alt="image" src="https://github.com/user-attachments/assets/68c32671-2057-4950-b704-97aa4f4cc52e" />
+<img width="1002" height="500" alt="image" src="https://github.com/user-attachments/assets/133d3caf-1308-419b-83a2-892e8cc3bff8" />
+
 
 
 - cookie的出现主要是http是无状态的协议，cookie将服务器返回的数据存在本地，然后下次发送请求的时候一并发送过去用以身份确认，cookie是在用户端，session是在服务器端，服务器端创建好后会返回给客户端sessionid，然后下次传输就会附带
